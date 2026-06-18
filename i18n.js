@@ -24,6 +24,20 @@
     document.querySelectorAll('.langtoggle button').forEach(function (b) {
       b.addEventListener('click', function () { apply(b.dataset.lang); });
     });
+    // mobile nav toggle
+    var nav = document.querySelector('.topnav');
+    var tgl = document.querySelector('.navtoggle');
+    if (nav && tgl) {
+      var setOpen = function (open) {
+        nav.classList.toggle('open', open);
+        tgl.setAttribute('aria-expanded', open ? 'true' : 'false');
+      };
+      tgl.addEventListener('click', function () { setOpen(!nav.classList.contains('open')); });
+      nav.querySelectorAll('.navlinks a').forEach(function (a) {
+        a.addEventListener('click', function () { setOpen(false); });
+      });
+      document.addEventListener('keydown', function (e) { if (e.key === 'Escape') setOpen(false); });
+    }
     // scroll reveal
     var obs = new IntersectionObserver(function (entries) {
       entries.forEach(function (en) {
