@@ -226,6 +226,8 @@ section.block{padding:74px 0;border-top:1px solid var(--line);}
   border-right:1px solid var(--line);min-height:260px;overflow:hidden;}
 .proj .visual.metabolic{background:radial-gradient(circle at 50% 45%,#0d1a14,#040806 72%);}
 .proj .visual.servinport{background:radial-gradient(circle at 50% 42%,#08243f,#04121f 72%);}
+.proj .visual.albor{background:radial-gradient(circle at 50% 44%,#1a1408,#080603 72%);color:#ffb454;}
+.proj .visual svg.mk{width:130px;position:relative;z-index:1;filter:drop-shadow(0 14px 36px rgba(0,0,0,.5));}
 .proj .visual img{width:170px;filter:drop-shadow(0 14px 36px rgba(0,0,0,.5));position:relative;z-index:1;}
 .proj .visual .glowpulse{position:absolute;width:220px;height:220px;border-radius:50%;
   background:radial-gradient(circle,color-mix(in srgb,var(--acc2) 40%,transparent),transparent 68%);
