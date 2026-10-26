@@ -292,6 +292,7 @@ section.block{padding:74px 0;border-top:1px solid var(--line);}
 .edu-card .ic svg{width:26px;height:26px;}
 .edu-card h4{font-size:19px;font-weight:700;color:#fff;}
 .edu-card .meta{font-family:var(--mono);font-size:12.5px;color:var(--ink-mute);margin-top:5px;letter-spacing:.5px;}
+.edu-card .meta a{color:var(--acc);}
 
 /* contact */
 .contact{text-align:center;padding:88px 0;}
